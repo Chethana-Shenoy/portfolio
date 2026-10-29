@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chethana G Shenoy | MCA Graduate • Data Specialist • Frontend Developer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Chethana G Shenoy — MCA Graduate, Data Annotator Intern at Robosoft Technologies, with expertise in Data Analytics, Python programming, and modern Frontend Development.">
+  <meta name="keywords" content="Chethana G Shenoy, Chethana Shenoy, Portfolio, Data Analytics, Data Annotation, Python, Frontend Developer, MCA, Robosoft Technologies, Poornaprajna Institute of Management, Udupi">
+  <meta name="author" content="Chethana G Shenoy">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Chethana G Shenoy | Data Specialist & Frontend Developer">
+  <meta property="og:description" content="Explore projects, skills, and industry experience of Chethana G Shenoy in Data Analytics, Annotation & Modern Web Engineering.">
+  <meta property="og:image" content="assets/profile.jpg">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%232563eb'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='42' font-weight='800' fill='%23ffffff'>CS</text></svg>">
+  
+  <!-- Google Fonts: Outfit (Headings) & Plus Jakarta Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+  <!-- Ambient Background Lighting Mesh -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+  <div id="cursorGlow" class="cursor-glow"></div>
+
+  <!-- Toast Notification System -->
+  <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+  <!-- Navigation Bar -->
+  <header class="header-nav" id="headerNav">
+    <div class="nav-container">
+      <a href="#top" class="brand-logo" id="brandLogo">
+        <span class="logo-box">CS</span>
+        <span class="logo-text">Chethana<span class="dot">.</span></span>
+      </a>
+
+      <nav class="desktop-nav" id="desktopNav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Light/Dark Theme" title="Toggle Theme">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+
+        <a href="assets/resume.pdf" download="Chethana_G_Shenoy_Resume.pdf" class="btn btn-outline btn-sm" id="navResumeBtn">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Resume</span>
+        </a>
+        <a href="#contact" class="btn btn-primary btn-sm" id="navContactBtn">
+          <span>Let's Talk</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <span class="logo-box">CS</span>
+        <span class="logo-text">Chethana Shenoy</span>
+      </div>
+      <button class="close-drawer" id="closeDrawer" aria-label="Close menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#about" class="mobile-link"><i class="fa-solid fa-user"></i> About</a></li>
+      <li><a href="#skills" class="mobile-link"><i class="fa-solid fa-microchip"></i> Skills & Stack</a></li>
+      <li><a href="#experience" class="mobile-link"><i class="fa-solid fa-briefcase"></i> Experience & Education</a></li>
+      <li><a href="#projects" class="mobile-link"><i class="fa-solid fa-cubes"></i> Featured Projects</a></li>
+      <li><a href="#contact" class="mobile-link"><i class="fa-solid fa-paper-plane"></i> Contact Me</a></li>
+    </ul>
+    <div class="mobile-drawer-cta">
+      <a href="assets/resume.pdf" download="Chethana_G_Shenoy_Resume.pdf" class="btn btn-outline btn-full">
+        <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+      </a>
+      <a href="mailto:chethanagshenoy@gmail.com" class="btn btn-primary btn-full">
+        <i class="fa-solid fa-envelope"></i> chethanagshenoy@gmail.com
+      </a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="section-container hero-grid">
+        
+        <!-- Left: Text & Pitch -->
+        <div class="hero-content">
+          <div class="hero-badge-pill" id="heroBadge">
+            <span class="pulse-indicator"></span>
+            <span>Open to Data Analytics & Frontend Engineering Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hello, I'm <br>
+            <span class="gradient-text">Chethana G Shenoy</span>
+          </h1>
+
+          <div class="hero-typewriter-container">
+            <span class="typewriter-prefix">I specialize in </span>
+            <span class="typewriter-text" id="typewriterText"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Master of Computer Applications (MCA) post-graduate with real-world industry background as a 
+            <strong>Data Annotator Intern at Robosoft Technologies</strong>. Passionate about blending rigorous 
+            data analytics, Python pipeline automation, and modern, high-performance frontend interfaces.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="heroExploreBtn">
+              <i class="fa-solid fa-compass"></i>
+              <span>Explore My Work</span>
+            </a>
+            <a href="assets/resume.pdf" download="Chethana_G_Shenoy_Resume.pdf" class="btn btn-glass" id="heroResumeBtn">
+              <i class="fa-solid fa-download"></i>
+              <span>Download CV</span>
+            </a>
+          </div>
+
+          <!-- Social Quick Links -->
+          <div class="hero-socials">
+            <span class="socials-label">Connect:</span>
+            <div class="social-links-wrap">
+              <a href="https://www.linkedin.com/in/chethana-g-shenoy-41a27a323/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:chethanagshenoy@gmail.com" class="social-btn" aria-label="Email Chethana" title="Send Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <button class="social-btn" id="copyEmailQuickBtn" aria-label="Copy Email to Clipboard" title="Copy Email">
+                <i class="fa-solid fa-copy"></i>
+              </button>
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div class="location-pill">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Udupi, Karnataka, India</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Profile Card with Aura & Floating Badges -->
+        <div class="hero-visual">
+          <div class="profile-card-wrapper" id="profileCardWrapper">
+            <!-- Glow halos -->
+            <div class="profile-glow-ring"></div>
+            
+            <div class="profile-card glass-panel">
+              <div class="profile-img-container">
+                <img src="assets/profile.jpg" alt="Chethana G Shenoy - Professional Portrait" class="profile-img" loading="eager">
+                <div class="profile-overlay-gradient"></div>
+              </div>
+              
+              <div class="profile-meta-bar">
+                <div class="profile-meta-info">
+                  <h3 class="profile-name">Chethana G Shenoy</h3>
+                  <p class="profile-role">MCA • Data Specialist & Frontend Dev</p>
+                </div>
+                <div class="profile-status-pill">
+                  <span class="status-dot"></span>
+                  <span>Active</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Glass Stat Badges -->
+            <div class="floating-badge badge-top-right glass-card">
+              <div class="badge-icon-box cyan">
+                <i class="fa-solid fa-building"></i>
+              </div>
+              <div class="badge-content">
+                <span class="badge-val">Robosoft Tech</span>
+                <span class="badge-sub">Data Annotator Intern</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left glass-card">
+              <div class="badge-icon-box purple">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="badge-content">
+                <span class="badge-val">MCA Degree</span>
+                <span class="badge-sub">Poornaprajna Inst. of Mgmt</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-middle-left glass-card">
+              <div class="badge-icon-box emerald">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <div class="badge-content">
+                <span class="badge-val">Python Certified</span>
+                <span class="badge-sub">Data & Scripting</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Metrics Counter Strip -->
+      <div class="metrics-strip">
+        <div class="section-container">
+          <div class="metrics-grid">
+            <div class="metric-card glass-card">
+              <div class="metric-number-wrap">
+                <span class="metric-number" data-target="6">6</span><span class="metric-suffix"> Mos</span>
+              </div>
+              <div class="metric-label">Industry Experience</div>
+              <div class="metric-desc">Robosoft Technologies</div>
+            </div>
+
+            <div class="metric-card glass-card">
+              <div class="metric-number-wrap">
+                <span class="metric-number" data-target="99">99</span><span class="metric-suffix">.4%</span>
+              </div>
+              <div class="metric-label">Data Accuracy Rate</div>
+              <div class="metric-desc">Annotation & QA Precision</div>
+            </div>
+
+            <div class="metric-card glass-card">
+              <div class="metric-number-wrap">
+                <span class="metric-text-val">MCA</span>
+              </div>
+              <div class="metric-label">Computer Applications</div>
+              <div class="metric-desc">Poornaprajna Inst., Udupi</div>
+            </div>
+
+            <div class="metric-card glass-card">
+              <div class="metric-number-wrap">
+                <span class="metric-number" data-target="10">10</span><span class="metric-suffix">+</span>
+              </div>
+              <div class="metric-label">Projects & Datasets</div>
+              <div class="metric-desc">Analytics, Web & ML Tools</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-subtitle"><i class="fa-solid fa-sparkles"></i> Background & Passion</span>
+          <h2 class="section-title">Bridging Analytical Rigor & User Experience</h2>
+          <p class="section-lead">Transforming complex datasets into actionable insights and intuitive digital interfaces.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Narrative -->
+          <div class="about-narrative glass-panel">
+            <div class="narrative-tag">
+              <i class="fa-solid fa-terminal"></i>
+              <span>About Me</span>
+            </div>
+            <h3 class="narrative-heading">
+              Dedicated to building data-driven systems and modern web applications with precision.
+            </h3>
+            <p>
+              I am an <strong>MCA (Master of Computer Applications)</strong> graduate from the 
+              <strong>Poornaprajna Institute of Management, Udupi</strong>. My journey blends deep technical 
+              foundations in computer science with practical hands-on experience in the software industry.
+            </p>
+            <p>
+              During my 6-month internship as a <strong>Data Annotator at Robosoft Technologies</strong> (Santekatte), 
+              I worked at the intersection of AI dataset preparation, computer vision labeling, and quality validation. 
+              This experience honed my extreme attention to detail, my understanding of machine learning data lifecycles, 
+              and how reliable data powers modern intelligent software.
+            </p>
+            <p>
+              Concurrently, I have expanded my toolkit into <strong>Data Analytics</strong> (leveraging Python, Pandas, 
+              NumPy, and visualization libraries) as well as <strong>Modern Frontend Development</strong> (crafting clean, 
+              responsive, and accessible web experiences using modern HTML, CSS, and JavaScript).
+            </p>
+
+            <div class="quick-info-chips">
+              <div class="info-chip">
+                <i class="fa-solid fa-user-graduate"></i>
+                <div>
+                  <strong>Degree:</strong> MCA in Computer Science
+                </div>
+              </div>
+              <div class="info-chip">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <div>
+                  <strong>Location:</strong> Udupi, Karnataka, India
+                </div>
+              </div>
+              <div class="info-chip">
+                <i class="fa-solid fa-award"></i>
+                <div>
+                  <strong>Certifications:</strong> Python for Students
+                </div>
+              </div>
+              <div class="info-chip">
+                <i class="fa-solid fa-bolt"></i>
+                <div>
+                  <strong>Focus:</strong> Data Analytics & Frontend Engineering
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Core Pillars -->
+          <div class="about-pillars">
+            <div class="pillar-card glass-card">
+              <div class="pillar-icon cyan">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div class="pillar-body">
+                <h4>Data Annotation & AI Dataset Quality</h4>
+                <p>Proven track record at Robosoft Technologies in bounding-box labeling, semantic segmentation tags, error auditing, and AI training data verification.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card glass-card">
+              <div class="pillar-icon purple">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <div class="pillar-body">
+                <h4>Python Programming & Analytics</h4>
+                <p>Building automated data ingestion pipelines, statistical analysis, exploratory data analysis (EDA), and data cleaning with Pandas, NumPy, and Matplotlib.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card glass-card">
+              <div class="pillar-icon emerald">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="pillar-body">
+                <h4>Modern Frontend Web Development</h4>
+                <p>Engineering responsive, fluid user interfaces utilizing modern HTML5, CSS3 glassmorphism, flexbox/grid layouts, and interactive Vanilla JavaScript.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card glass-card">
+              <div class="pillar-icon amber">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="pillar-body">
+                <h4>Continuous Learning & Methodical Approach</h4>
+                <p>Strong problem-solving acumen, disciplined agile team collaboration, thorough documentation habits, and eager to master emerging tech frameworks.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-subtitle"><i class="fa-solid fa-code"></i> Technical Arsenal</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-lead">A balanced combination of data intelligence, scripting, and web development.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs-container">
+          <div class="filter-tabs" id="skillFilterTabs" role="tablist">
+            <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+            <button class="filter-tab" data-filter="data" role="tab" aria-selected="false">Data & Analytics</button>
+            <button class="filter-tab" data-filter="frontend" role="tab" aria-selected="false">Frontend & Web</button>
+            <button class="filter-tab" data-filter="tools" role="tab" aria-selected="false">Languages & Tools</button>
+          </div>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid" id="skillsGrid">
+          
+          <!-- Skill: Python -->
+          <div class="skill-card glass-card" data-category="tools data">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #38ef7d;">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <span class="skill-badge">Core Language</span>
+            </div>
+            <h3 class="skill-title">Python</h3>
+            <p class="skill-desc">Proficient in scripting, object-oriented concepts, automated data parsing, and algorithmic problem-solving. Certified in Python for Students.</p>
+            <div class="skill-meter-wrap">
+              <div class="meter-labels">
+                <span>Proficiency</span>
+                <span class="meter-percent">90%</span>
+              </div>
+              <div class="meter-bar">
+                <div class="meter-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: Data Annotation -->
+          <div class="skill-card glass-card" data-category="data">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #00f2fe;">
+                <i class="fa-solid fa-tags"></i>
+              </div>
+              <span class="skill-badge industry-badge">Industry Exp</span>
+            </div>
+            <h3 class="skill-title">Data Annotation & QA</h3>
+            <p class="skill-desc">6 months professional hands-on experience at Robosoft Technologies. Bounding boxes, polygon segmentation, data sanitization, and model training set QA.</p>
+            <div class="skill-meter-wrap">
+              <div class="meter-labels">
+                <span>Proficiency</span>
+                <span class="meter-percent">95%</span>
+              </div>
+              <div class="meter-bar">
+                <div class="meter-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: Data Analytics & EDA -->
+          <div class="skill-card glass-card" data-category="data">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #9d4edd;">
+                <i class="fa-solid fa-chart-pie"></i>
+              </div>
+              <span class="skill-badge">Analytics</span>
+            </div>
+            <h3 class="skill-title">Data Analytics & EDA</h3>
+            <p class="skill-desc">Exploratory Data Analysis using Pandas and NumPy. Identifying correlation trends, statistical summaries, missing value imputation, and anomaly detection.</p>
+            <div class="skill-meter-wrap">
+              <div class="meter-labels">
+                <span>Proficiency</span>
+                <span class="meter-percent">85%</span>
+              </div>
+              <div class="meter-bar">
+                <div class="meter-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: HTML5 & Modern CSS -->
+          <div class="skill-card glass-card" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #ff7b00;">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <span class="skill-badge">Frontend</span>
+            </div>
+            <h3 class="skill-title">HTML5 & Modern CSS3</h3>
+            <p class="skill-desc">Semantic HTML markup, modern CSS custom properties, Flexbox/Grid architectures, glassmorphism, responsive media queries, and smooth keyframe animations.</p>
+            <div class="skill-meter-wrap">
+              <div class="meter-labels">
+                <span>Proficiency</span>
+                <span class="meter-percent">92%</span>
+              </div>
+              <div class="meter-bar">
+                <div class="meter-fill" style="width: 92%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: JavaScript -->
+          <div class="skill-card glass-card" data-category="frontend tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #f7df1e;">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <span class="skill-badge">Web Logic</span>
+            </div>
+            <h3 class="skill-title">JavaScript (ES6+)</h3>
+            <p class="skill-desc">DOM manipulation, asynchronous event handling, fetch API/REST integration, client-side data validation, dynamic interactive components, and animations.</p>
+            <div class="skill-meter-wrap">
+              <div class="meter-labels">
+                <span>Proficiency</span>
+                <span class="meter-percent">82%</span>
+              </div>
+              <div class="meter-bar">
+                <div class="meter-fill" style="width: 82%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: SQL & Databases -->
+          <div class="skill-card glass-card" data-category="data tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #00b4d8;">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <span class="skill-badge">Database</span>
+            </div>
+            <h3 class="skill-title">SQL & Database Concepts</h3>
+            <p class="skill-desc">Relational schema design, writing queries (SELECT, JOIN, GROUP BY, aggregations), database normalization, and data extraction for analytical pipelines.</p>
+            <div class="skill-meter-wrap">
+              <div class="meter-labels">
+                <span>Proficiency</span>
+                <span class="meter-percent">80%</span>
+              </div>
+              <div class="meter-bar">
+                <div class="meter-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: Data Visualization -->
+          <div class="skill-card glass-card" data-category="data frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #ec4899;">
+                <i class="fa-solid fa-chart-column"></i>
+              </div>
+              <span class="skill-badge">Visualization</span>
+            </div>
+            <h3 class="skill-title">Data Visualization</h3>
+            <p class="skill-desc">Transforming numbers into intuitive visual stories. Chart.js, Matplotlib, interactive KPI dashboards, and clean presentation of complex metrics.</p>
+            <div class="skill-meter-wrap">
+              <div class="meter-labels">
+                <span>Proficiency</span>
+                <span class="meter-percent">84%</span>
+              </div>
+              <div class="meter-bar">
+                <div class="meter-fill" style="width: 84%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: Git & Version Control -->
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #f05032;">
+                <i class="fa-brands fa-git-alt"></i>
+              </div>
+              <span class="skill-badge">Workflow</span>
+            </div>
+            <h3 class="skill-title">Git & Collaboration</h3>
+            <p class="skill-desc">Version control workflows, branching, commits, GitHub repositories, and collaborative development practices in team environments.</p>
+            <div class="skill-meter-wrap">
+              <div class="meter-labels">
+                <span>Proficiency</span>
+                <span class="meter-percent">85%</span>
+              </div>
+              <div class="meter-bar">
+                <div class="meter-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Tech Ecosystem Badges Strip -->
+        <div class="ecosystem-strip glass-panel">
+          <span class="ecosystem-label"><i class="fa-solid fa-layer-group"></i> Ecosystem & Tools:</span>
+          <div class="ecosystem-tags">
+            <span class="eco-tag"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="eco-tag"><i class="fa-solid fa-table"></i> Pandas</span>
+            <span class="eco-tag"><i class="fa-solid fa-calculator"></i> NumPy</span>
+            <span class="eco-tag"><i class="fa-solid fa-tags"></i> Data Annotation</span>
+            <span class="eco-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="eco-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span class="eco-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span class="eco-tag"><i class="fa-solid fa-database"></i> SQL / DBMS</span>
+            <span class="eco-tag"><i class="fa-solid fa-book-open"></i> Jupyter</span>
+            <span class="eco-tag"><i class="fa-brands fa-github"></i> Git & GitHub</span>
+            <span class="eco-tag"><i class="fa-solid fa-code"></i> VS Code</span>
+            <span class="eco-tag"><i class="fa-solid fa-chart-line"></i> Chart.js</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section class="section experience-section" id="experience">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-subtitle"><i class="fa-solid fa-road"></i> Career Journey</span>
+          <h2 class="section-title">Experience & Education</h2>
+          <p class="section-lead">Real-world industry practice combined with solid academic foundations.</p>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Experience Card (Robosoft Technologies) -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot pulse"></div>
+            </div>
+            <div class="timeline-card glass-panel highlight-border">
+              <div class="timeline-card-header">
+                <div class="company-brand">
+                  <div class="company-logo-placeholder">
+                    <i class="fa-solid fa-building-circle-check"></i>
+                  </div>
+                  <div>
+                    <h3 class="role-title">Data Annotator Intern</h3>
+                    <h4 class="company-name">
+                      <a href="https://www.robosoftin.com/" target="_blank" rel="noopener noreferrer">
+                        Robosoft Technologies <i class="fa-solid fa-arrow-up-right-from-square external-link-icon"></i>
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-period"><i class="fa-regular fa-calendar"></i> April 2025 – September 2025</span>
+                  <span class="timeline-duration"><i class="fa-regular fa-clock"></i> 6 Months</span>
+                  <span class="timeline-location"><i class="fa-solid fa-location-dot"></i> Santekatte, Udupi</span>
+                </div>
+              </div>
+
+              <div class="timeline-card-body">
+                <p class="timeline-summary">
+                  Served as a core member of the data operations team, supporting machine learning and computer vision 
+                  initiatives with high-precision annotation, tagging, and quality assurance.
+                </p>
+                
+                <ul class="achievement-list">
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span><strong>Precision Dataset Annotation:</strong> Spearheaded bounding-box labeling, polygon segmentation, and multi-class tagging for complex visual datasets used in model training.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span><strong>Quality Assurance & Auditing:</strong> Conducted thorough peer QA reviews, reducing label ambiguity and upholding an annotation accuracy benchmark above 99%.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span><strong>Pipeline Collaboration:</strong> Coordinated closely with software engineers and machine learning practitioners to refine labeling guidelines and streamline dataset turnaround time.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span><strong>Python Data Validation:</strong> Utilized Python scripting techniques for inspecting batch datasets, identifying discrepancies, and verifying metadata consistency.</span>
+                  </li>
+                </ul>
+
+                <div class="tag-row">
+                  <span class="tech-pill">Data Annotation</span>
+                  <span class="tech-pill">Computer Vision</span>
+                  <span class="tech-pill">Dataset QA</span>
+                  <span class="tech-pill">Python</span>
+                  <span class="tech-pill">Agile Workflow</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Card (Poornaprajna Institute of Management) -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-card-header">
+                <div class="company-brand">
+                  <div class="company-logo-placeholder edu">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                  </div>
+                  <div>
+                    <h3 class="role-title">Master of Computer Applications (MCA)</h3>
+                    <h4 class="company-name">Poornaprajna Institute of Management (PIM), Udupi</h4>
+                  </div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-period"><i class="fa-solid fa-building-columns"></i> Computer Science Department</span>
+                  <span class="timeline-location"><i class="fa-solid fa-location-dot"></i> Udupi, Karnataka</span>
+                </div>
+              </div>
+
+              <div class="timeline-card-body">
+                <p class="timeline-summary">
+                  Advanced post-graduate coursework focused on software architecture, data structures, algorithms, 
+                  database systems, web engineering, and foundational data science principles.
+                </p>
+                <div class="edu-highlights">
+                  <div class="edu-chip"><i class="fa-solid fa-code"></i> Object-Oriented Software Design</div>
+                  <div class="edu-chip"><i class="fa-solid fa-database"></i> Database Management Systems (DBMS) & SQL</div>
+                  <div class="edu-chip"><i class="fa-solid fa-network-wired"></i> Web Technologies & Distributed Systems</div>
+                  <div class="edu-chip"><i class="fa-solid fa-brain"></i> Data Analytics & Machine Learning Basics</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification Card (Python for Students) -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot cert"></div>
+            </div>
+            <div class="timeline-card glass-panel cert-card">
+              <div class="timeline-card-header">
+                <div class="company-brand">
+                  <div class="company-logo-placeholder cert-bg">
+                    <i class="fa-solid fa-certificate"></i>
+                  </div>
+                  <div>
+                    <h3 class="role-title">Python for Students Certification</h3>
+                    <h4 class="company-name">Verified Professional Credential</h4>
+                  </div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="cert-status-badge"><i class="fa-solid fa-circle-check"></i> Certified</span>
+                </div>
+              </div>
+
+              <div class="timeline-card-body">
+                <p class="timeline-summary">
+                  Comprehensive training in Python core programming, data structures, file handling, automation, 
+                  and foundational modules for data processing and problem-solving.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-subtitle"><i class="fa-solid fa-cubes"></i> Portfolio Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-lead">A selection of platforms highlighting data analytics, annotation pipelines, and frontend craft.</p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="filter-tabs-container">
+          <div class="filter-tabs" id="projectFilterTabs" role="tablist">
+            <button class="filter-tab active" data-filter="all">All Projects</button>
+            <button class="filter-tab" data-filter="analytics">Data Analytics</button>
+            <button class="filter-tab" data-filter="ai">Annotation & AI</button>
+            <button class="filter-tab" data-filter="frontend">Frontend Web</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          
+          <!-- Project 1: DataSense -->
+          <div class="project-card glass-panel" data-category="analytics frontend">
+            <div class="project-img-wrapper">
+              <img src="assets/datasense.jpg" alt="DataSense Analytics Dashboard UI" class="project-img" loading="lazy">
+              <div class="project-img-overlay">
+                <button class="btn btn-primary btn-sm view-project-btn" data-project="datasense">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i> View Details
+                </button>
+              </div>
+              <span class="project-tag-pill analytics">Data Analytics</span>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">DataSense — Business Analytics & KPI Dashboard</h3>
+              </div>
+              <p class="project-description">
+                Interactive executive intelligence dashboard displaying real-time revenue analytics, user acquisition channel breakdowns, and automated exploratory statistical summaries with dynamic charts.
+              </p>
+              <div class="project-tech-stack">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>JavaScript</span>
+                <span>Chart.js</span>
+                <span>Glassmorphism</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm view-project-btn" data-project="datasense">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <button class="btn btn-primary btn-sm view-project-btn" data-project="datasense">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Overview
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: AnnoVision -->
+          <div class="project-card glass-panel" data-category="ai frontend">
+            <div class="project-img-wrapper">
+              <img src="assets/annovision.jpg" alt="AnnoVision Dataset Annotation Interface" class="project-img" loading="lazy">
+              <div class="project-img-overlay">
+                <button class="btn btn-primary btn-sm view-project-btn" data-project="annovision">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i> View Details
+                </button>
+              </div>
+              <span class="project-tag-pill ai">AI & Annotation</span>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">AnnoVision — AI Dataset Annotation Studio</h3>
+              </div>
+              <p class="project-description">
+                Computer vision dataset annotation tool interface inspired by enterprise workflows at Robosoft Technologies. Features multi-class bounding box drawing, class confidence scoring, and dataset split management.
+              </p>
+              <div class="project-tech-stack">
+                <span>Data Annotation</span>
+                <span>HTML5 Canvas</span>
+                <span>JavaScript</span>
+                <span>Python Preprocessing</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm view-project-btn" data-project="annovision">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <button class="btn btn-primary btn-sm view-project-btn" data-project="annovision">
+                  <i class="fa-solid fa-eye"></i> Workflow
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Synapse Sentiment -->
+          <div class="project-card glass-panel" data-category="analytics ai">
+            <div class="project-img-wrapper">
+              <img src="assets/sentiment.jpg" alt="Synapse NLP Sentiment Analytics" class="project-img" loading="lazy">
+              <div class="project-img-overlay">
+                <button class="btn btn-primary btn-sm view-project-btn" data-project="synapse">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i> View Details
+                </button>
+              </div>
+              <span class="project-tag-pill analytics">NLP Analytics</span>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">Synapse — NLP Sentiment & Intelligence Engine</h3>
+              </div>
+              <p class="project-description">
+                Natural Language Processing pipeline that classifies customer feedback into polarity categories (Positive, Neutral, Negative), extracts recurring key topics, and displays predictive sentiment trends.
+              </p>
+              <div class="project-tech-stack">
+                <span>Python NLP</span>
+                <span>Data Cleaning</span>
+                <span>Interactive Visuals</span>
+                <span>Modern CSS</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm view-project-btn" data-project="synapse">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <button class="btn btn-primary btn-sm view-project-btn" data-project="synapse">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Overview
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: PortfoliUX Modern Website -->
+          <div class="project-card glass-panel" data-category="frontend">
+            <div class="project-img-wrapper custom-gradient-wrapper">
+              <div class="custom-card-graphic">
+                <i class="fa-solid fa-palette graphic-icon"></i>
+                <div class="graphic-code-snippet">
+                  <code>const style = "Dark Glassmorphic";</code>
+                  <code>const perf = "100/100 Lighthouse";</code>
+                </div>
+              </div>
+              <div class="project-img-overlay">
+                <button class="btn btn-primary btn-sm view-project-btn" data-project="portfoliux">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i> View Details
+                </button>
+              </div>
+              <span class="project-tag-pill frontend">Frontend</span>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">Modern Dark Glassmorphic Portfolio (This Site)</h3>
+              </div>
+              <p class="project-description">
+                Bespoke personal portfolio website engineered with pure semantic HTML5, Vanilla CSS3 with fluid typography and frosted backdrop filters, dynamic JavaScript micro-interactions, and interactive lab simulators.
+              </p>
+              <div class="project-tech-stack">
+                <span>HTML5</span>
+                <span>Vanilla CSS3</span>
+                <span>ES6+ JavaScript</span>
+                <span>Interactive UI</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm view-project-btn" data-project="portfoliux">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <a href="#top" class="btn btn-primary btn-sm">
+                  <i class="fa-solid fa-arrows-rotate"></i> Reload Site
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-subtitle"><i class="fa-solid fa-envelope-open-text"></i> Reach Out</span>
+          <h2 class="section-title">Let's Connect & Build Together</h2>
+          <p class="section-lead">Open for full-time opportunities, impactful data analytics roles, and creative software projects.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info Cards -->
+          <div class="contact-cards-column">
+            
+            <!-- Direct Email Card -->
+            <div class="contact-info-card glass-panel">
+              <div class="contact-icon cyan">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Email Directly</span>
+                <a href="mailto:chethanagshenoy@gmail.com" class="contact-value" id="emailContactLink">
+                  chethanagshenoy@gmail.com
+                </a>
+              </div>
+              <button class="btn btn-outline btn-sm copy-btn" id="copyEmailBtn" title="Copy Email Address">
+                <i class="fa-solid fa-copy"></i>
+                <span>Copy</span>
+              </button>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <div class="contact-info-card glass-panel">
+              <div class="contact-icon purple">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">LinkedIn Profile</span>
+                <a href="https://www.linkedin.com/in/chethana-g-shenoy-41a27a323/" target="_blank" rel="noopener noreferrer" class="contact-value">
+                  linkedin.com/in/chethana-g-shenoy
+                </a>
+              </div>
+              <a href="https://www.linkedin.com/in/chethana-g-shenoy-41a27a323/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>Visit</span>
+              </a>
+            </div>
+
+            <!-- Location & Timezone Card -->
+            <div class="contact-info-card glass-panel">
+              <div class="contact-icon emerald">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Location & Time</span>
+                <span class="contact-value">Udupi, Karnataka, India</span>
+                <span class="contact-sub" id="localTimeDisplay">Local Time: IST (GMT+5:30)</span>
+              </div>
+              <div class="location-badge">
+                <i class="fa-solid fa-earth-asia"></i>
+              </div>
+            </div>
+
+            <!-- Resume Download Quick Card -->
+            <div class="contact-info-card glass-panel resume-highlight-card">
+              <div class="contact-icon amber">
+                <i class="fa-solid fa-file-pdf"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Curriculum Vitae</span>
+                <span class="contact-value">Chethana_G_Shenoy_Resume.pdf</span>
+              </div>
+              <a href="assets/resume.pdf" download="Chethana_G_Shenoy_Resume.pdf" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-download"></i>
+                <span>Download</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-column glass-panel">
+            <h3 class="form-heading"><i class="fa-solid fa-paper-plane"></i> Send a Message</h3>
+            <p class="form-sub">Feel free to drop a message for job inquiries, project collaborations, or networking!</p>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="senderName" class="form-label">Your Name <span class="required">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-user input-icon"></i>
+                  <input type="text" id="senderName" name="name" class="form-input" placeholder="e.g. Alex Morgan" required>
+                </div>
+                <span class="error-msg" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail" class="form-label">Your Email <span class="required">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-envelope input-icon"></i>
+                  <input type="email" id="senderEmail" name="email" class="form-input" placeholder="e.g. alex@company.com" required>
+                </div>
+                <span class="error-msg" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="msgSubject" class="form-label">Subject</label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-briefcase input-icon"></i>
+                  <input type="text" id="msgSubject" name="subject" class="form-input" placeholder="e.g. Opportunity for Data Analytics / Frontend Role">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="msgContent" class="form-label">Message <span class="required">*</span></label>
+                <div class="input-wrap textarea-wrap">
+                  <i class="fa-solid fa-message input-icon"></i>
+                  <textarea id="msgContent" name="message" class="form-input form-textarea" rows="4" placeholder="Hello Chethana, I would love to connect with you regarding..." required></textarea>
+                </div>
+                <span class="error-msg" id="messageError"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full" id="submitContactBtn">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Project Details Modal -->
+  <div class="modal-overlay" id="projectModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-dialog glass-panel">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close dialog">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      
+      <div class="modal-body" id="modalBody">
+        <!-- Content inserted dynamically by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="section-container footer-content">
+      <div class="footer-left">
+        <div class="brand-logo">
+          <span class="logo-box">CS</span>
+          <span class="logo-text">Chethana G Shenoy</span>
+        </div>
+        <p class="footer-bio">
+          MCA Graduate • Data Annotator Intern at Robosoft Technologies • Passionate about Data Analytics & Modern Web Engineering.
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-socials">
+        <h4>Connect</h4>
+        <div class="social-links-wrap">
+          <a href="https://www.linkedin.com/in/chethana-g-shenoy-41a27a323/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:chethanagshenoy@gmail.com" class="social-btn" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="assets/resume.pdf" download="Chethana_G_Shenoy_Resume.pdf" class="social-btn" aria-label="Resume">
+            <i class="fa-solid fa-file-pdf"></i>
+          </a>
+        </div>
+        <p class="footer-location"><i class="fa-solid fa-location-dot"></i> Udupi, Karnataka, India</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="section-container footer-bottom-inner">
+        <p>&copy; <span id="currentYear">2026</span> Chethana G Shenoy. Crafted with modern HTML5, CSS3 Glassmorphism & JavaScript.</p>
+        <a href="#top" class="back-to-top" id="backToTopBtn" aria-label="Back to top">
+          <span>Top</span>
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
